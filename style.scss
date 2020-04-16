@@ -81,6 +81,11 @@ tr:hover{
   }
 }
 
-.container {
-  background-color: dodgerblue;
+.col-lg-3 {
+  background-color: $maincolor;
+  border-radius: 5px;
+  color: white;
+  padding: 20px;
+  margin-bottom: 5px;
+
 }

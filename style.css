@@ -65,4 +65,11 @@ tr:hover {
   .contactcontainer ul {
     font-style: italic; }
 
+.col-lg-3 {
+  background-color: dodgerblue;
+  border-radius: 5px;
+  color: white;
+  padding: 20px;
+  margin-bottom: 5px; }
+
 /*# sourceMappingURL=style.css.map */
