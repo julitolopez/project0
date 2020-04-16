@@ -45,9 +45,16 @@ h1 {
   }
 }
 
+@media all and (max-width: 500px){
+  #menu {
+    flex-direction: column;
+  }
+}
+
 #yogananda{
   @extend %quote;
 }
+
 .introtitle {
   margin-top: 10px;
   padding: 10px;
@@ -86,7 +93,21 @@ tr:hover{
   background-color: $maincolor;
   border-radius: 5px;
   color: white;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 5px;
+}
 
+.list{
+  background-color: $maincolor;
+  margin: 20px;
+  padding: 40px;
+  border-radius: 5px;
+  color: white;
+  ol {
+    font-style: italic;
+  }
+  a {
+    font-weight: bold;
+    color: white;
+  }
 }

@@ -35,6 +35,9 @@ h1 {
 
   .welcome-item-2 {
     width: 90%; } }
+@media all and (max-width: 500px) {
+  #menu {
+    flex-direction: column; } }
 .introtitle {
   margin-top: 10px;
   padding: 10px;
@@ -68,7 +71,19 @@ tr:hover {
   background-color: dodgerblue;
   border-radius: 5px;
   color: white;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 5px; }
+
+.list {
+  background-color: dodgerblue;
+  margin: 20px;
+  padding: 40px;
+  border-radius: 5px;
+  color: white; }
+  .list ol {
+    font-style: italic; }
+  .list a {
+    font-weight: bold;
+    color: white; }
 
 /*# sourceMappingURL=style.css.map */
