@@ -11,23 +11,38 @@ h1 {
   padding: 10px;
 }
 
-.leftpic {
-  float:left;
-  width: 30%;
-  padding: 20px;
-  min-width: 300px;
+.welcome-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 20px;
+  margin-left: 20px;
 }
-.quotecontainer {
-  float: left;
-  width: 65%;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 400px;
-  padding: 40px;
+
+.welcome-item-1{
+  width: 30%;
+  padding: 30px;
+}
+
+.welcome-item-2{
+  width: 70%;
   background-color: $maincolor;
+  padding: 30px;
   border-radius: 5px;
-  margin: 20px;
-  color:white;
+  color: white;
+}
+
+@media all and (max-width: 800px){
+  .welcome-container{
+    flex-direction: column;
+  }
+  .welcome-item-1{
+    width:70%;
+  }
+  .welcome-item-2{
+    width:90%;
+  }
 }
 
 #yogananda{
@@ -35,11 +50,11 @@ h1 {
 }
 .introtitle {
   margin-top: 10px;
-  padding: 20px;
+  padding: 10px;
   color: $introtitle;
 }
 
-.table {
+.table-container {
   border: 3px solid lightgray;
   padding: 40px;
   padding-bottom: 300px;
@@ -65,20 +80,6 @@ th {
 
 tr:hover{
   background-color: lightyellow;
-}
-
-.contactcontainer {
-  background-color: $maincolor;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 40px;
-}
-
-.contactcontainer{
-  color: white;
-  ul {
-    font-style:italic;
-  }
 }
 
 .col-lg-3 {
